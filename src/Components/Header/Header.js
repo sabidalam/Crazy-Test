@@ -16,7 +16,7 @@ const Header = () => {
             </div>
             <nav className='flex justify-between items-center bg-orange-200 py-3'>
                 <h2 className='text-3xl font-bold text-blue-600 md:ml-40'>Crazy Test</h2>
-                <div className={`absolute md:static duration-500 ease-in md:mr-40 ${open ? 'top-6 ' : 'top-[-120px]'}`}>
+                <div className={` bg-orange-200 absolute md:static duration-500 ease-in md:mr-40 ${open ? 'top-5 right-5' : 'top-[-120px]'}`}>
                     <Link className='mr-6 font-bold text-blue-600 hover:text-black hover:underline' to='/'>Home</Link>
                     {/* <Link className='mr-6 font-bold text-blue-600 hover:text-black hover:underline' to='/quiz'>Quiz</Link> */}
                     <Link className='mr-6 font-bold text-blue-600 hover:text-black hover:underline' to='/statistics'>Statistics</Link>
