@@ -16,7 +16,6 @@ function App() {
           path: '/',
           loader: () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
-              .then(res => res.json());
           },
           element: <Home></Home>
         },
@@ -29,6 +28,9 @@ function App() {
         },
         {
           path: 'statistics',
+          loader: () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
           element: <Statistics></Statistics>
         },
         {
