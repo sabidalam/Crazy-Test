@@ -21,9 +21,9 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/quiz:quizId',
+          path: '/quiz/:quizId',
           loader: async ({ params }) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}.json`)
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <Quiz></Quiz>
         },
@@ -36,6 +36,13 @@ function App() {
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <div className='mt-5'>
+        <h2 className='text-5xl text-red-600'>404 not found!</h2>
+        <h3 className='text-2xl font-bold'>The route you are searching is not available</h3>
+      </div>
     }
   ]);
   return (

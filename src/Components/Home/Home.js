@@ -4,7 +4,9 @@ import img from '../../images/bg.jpeg';
 import Topics from '../Topics/Topics';
 
 const Home = () => {
-
+    const topicsData = useLoaderData();
+    const topics = topicsData.data;
+    // console.log(topics);
 
     return (
         <div>
@@ -19,7 +21,15 @@ const Home = () => {
                 </div>
                 <img className='(sm: ml-32 mt-5 ) w-1/3 rounded-lg' src={img} alt="" />
             </div>
+            <div className='container mx-auto px-16 my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                {
+                    topics.map(topic => <Topics
+                        key={topic.id}
+                        topic={topic}>
+                    </Topics>)
+                }
 
+            </div>
 
         </div>
     );
