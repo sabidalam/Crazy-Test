@@ -8,7 +8,7 @@ const Topics = ({ topic }) => {
 
     return (
         <div className='border-2 border-blue-700 rounded-lg'>
-            <img className='p-4 bg-gray-300' src={logo} alt="" />
+            <img className='p-4 bg-gray-300 rounded-t-lg' src={logo} alt="" />
             <div className='my-2 flex justify-between items-center px-4'>
                 <h4 className='font-bold text-blue-600'>{name}</h4>
                 <div>
