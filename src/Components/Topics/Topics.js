@@ -4,7 +4,8 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 const Topics = ({ topic }) => {
-    const { id, name, logo } = topic;
+    console.log(topic);
+    const { id, name, logo, total } = topic;
 
     return (
         <div className='border-2 border-blue-700 rounded-lg'>
@@ -17,8 +18,8 @@ const Topics = ({ topic }) => {
                     </Link>
                     </button>
                 </div>
-
             </div>
+            <h4 className='font-semibold mb-2'>Total Question : {total}</h4>
         </div>
     );
 };
