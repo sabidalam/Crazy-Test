@@ -41,10 +41,12 @@ function App() {
     },
     {
       path: '*',
-      element: <div className='mt-5'>
-        <h2 className='text-5xl text-red-600'>404 not found!</h2>
-        <h3 className='text-2xl font-bold'>The route you are searching is not available</h3>
-      </div>
+      element:
+        <div className='mt-20'>
+          <h2 className='text-5xl text-red-600'>404 not found!</h2>
+          <h3 className='text-2xl font-bold mt-4'>The route you are searching is not available!!!</h3>
+          <h3 className='text-2xl font-bold mt-4'>Please try for a valid route!!!</h3>
+        </div>
     }
   ]);
   return (
