@@ -7,7 +7,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     return (
         <div className='sm: relative bg-orange-300'>
-            <div onClick={() => setOpen(!open)} className="sm: absolute top-4 right-0 h-6 w-6 md:hidden">
+            <div onClick={() => setOpen(!open)} className="sm: absolute top-4 right-0 h-6 w-6 mr-1 md:hidden">
 
                 {
                     open ? <XMarkIcon /> : <Bars3Icon />
@@ -15,8 +15,8 @@ const Header = () => {
 
             </div>
             <nav className='flex justify-between items-center bg-orange-200 py-3'>
-                <h2 className='text-3xl font-bold text-blue-600 ml-8 md:ml-40'>Crazy Test</h2>
-                <div className={` bg-orange-200 absolute md:static duration-500 ease-in md:mr-40 ${open ? 'top-5 right-5' : 'top-[-120px] right-5'}`}>
+                <h2 className='text-3xl font-bold text-blue-600 ml-4 md:ml-14 lg:ml-40'>Crazy Test</h2>
+                <div className={` bg-orange-200 absolute md:static duration-500 ease-in md:mr-14 lg:mr-40 ${open ? 'top-5 right-7' : 'top-[-120px] right-7'}`}>
                     <Link className='mr-6 font-bold text-blue-600 hover:text-black hover:underline' to='/'>Home</Link>
                     {/* <Link className='mr-6 font-bold text-blue-600 hover:text-black hover:underline' to='/quiz'>Quiz</Link> */}
                     <Link className='mr-6 font-bold text-blue-600 hover:text-black hover:underline' to='/statistics'>Statistics</Link>

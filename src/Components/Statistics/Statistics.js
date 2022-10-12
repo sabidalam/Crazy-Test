@@ -6,7 +6,7 @@ const Statistics = () => {
     const allData = useLoaderData();
     const data = allData.data;
     return (
-        <div className='md:my-12 md:w-1/2 md:mx-auto'>
+        <div className='my-12 md:w-1/2 md:mx-auto'>
             <h2 className='text-2xl font-semibold mb-4'>Statistics of Data</h2>
             <div className='mt-8'>
                 <ResponsiveContainer width="95%" height={400}>
